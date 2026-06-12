@@ -90,19 +90,20 @@
     <header class="sticky top-0 z-40 bg-luxury-950/90 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
             <div class="flex items-center gap-3">
-                <img src="Assets/RV%20logo.png" alt="Rexium Ventures" class="h-12 w-auto object-contain" onerror="this.style.display='none'"/>
+                <img src="Assets/logos/rv-logo.png" alt="Rexium Ventures" class="h-12 w-auto object-contain" onerror="this.style.display='none'"/>
                 <div class="flex flex-col">
                     <span class="text-[10px] uppercase tracking-widest text-gold-500 font-bold">Rexium Ventures</span>
                     <span class="text-base font-serif font-semibold text-slate-100 tracking-tight">Sarovar Vasu Sri Pride</span>
                 </div>
             </div>
-            <nav class="hidden md:flex space-x-8 text-xs font-semibold text-slate-300 uppercase tracking-wider">
+            <nav class="hidden lg:flex space-x-6 text-[10px] xl:text-xs font-semibold text-slate-300 uppercase tracking-wider">
                 <a href="#overview" class="nav-link hover:text-gold-400 transition-colors">Overview</a>
+                <a href="#location" class="nav-link hover:text-gold-400 transition-colors">Location</a>
                 <a href="#plans" class="nav-link hover:text-gold-400 transition-colors">Plans</a>
                 <a href="#growth" class="nav-link hover:text-gold-400 transition-colors">Yield Growth</a>
                 <a href="#luxury" class="nav-link hover:text-gold-400 transition-colors">Interiors</a>
                 <a href="#perks" class="nav-link hover:text-gold-400 transition-colors">Perks</a>
-                <a href="#progress" class="nav-link hover:text-gold-400 transition-colors">Progress</a>
+                <a href="#faq" class="nav-link hover:text-gold-400 transition-colors">FAQ</a>
             </nav>
             <div class="flex items-center gap-4">
                 <a href="tel:+918639674262" class="hidden lg:inline-flex text-xs font-semibold text-gold-400 hover:text-gold-300 transition-colors">
@@ -119,7 +120,7 @@
     <section class="relative min-h-[80vh] flex items-center py-20 overflow-hidden border-b border-slate-800/50 reveal-section">
         <!-- Background Image overlay -->
         <div class="absolute inset-0 z-0">
-            <img src="Assets/openart-gpt-image-2-edit-1_1779182644290_ab943ce6.jpg" alt="Sarovar Vasu Sri Pride Hotel Banner" class="w-full h-full object-cover opacity-20" onerror="this.src='Assets/ChatGPT%20Image%20May%201%2C%202026%2C%2006_44_52%20PM.png'; this.onerror=null;"/>
+            <img src="Assets/images/banners/hero-banner.jpg" alt="Sarovar Vasu Sri Pride Hotel Banner" class="w-full h-full object-cover opacity-20" onerror="this.src='Assets/images/banners/hero-fallback.png'; this.onerror=null;"/>
             <div class="absolute inset-0 bg-gradient-to-t from-luxury-950 via-luxury-950/80 to-transparent"></div>
         </div>
         
@@ -153,10 +154,10 @@
     <section id="overview" class="py-20 bg-slate-900/30 border-b border-slate-800/50 reveal-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
             <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
-                <!-- Side Visual (Updated Extension to .jpg) -->
+                <!-- Side Visual -->
                 <div class="lg:col-span-5">
                     <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 group">
-                        <img src="Assets/FRONT%20Side%20SCPL%20DUNDIGUL.jpeg" alt="SCPL Dundigul Front Elevation" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <img src="Assets/images/construction/front-elevation.jpg" alt="SCPL Dundigul Front Elevation" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" />
                         <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/80 to-transparent"></div>
                     </div>
                 </div>
@@ -199,6 +200,44 @@
         </div>
     </section>
 
+    <!-- Connectivity & Landmarks -->
+    <section id="location" class="py-20 bg-slate-900/10 border-b border-slate-800/50 reveal-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs font-semibold text-gold-400 uppercase tracking-widest">Strategic Location</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                    Connectivity & Proximity Advantages
+                </h2>
+                <p class="text-sm text-slate-400">
+                    Located in Dundigal, Hyderabad's rapid growth corridor, with seamless access to key hubs.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl luxury-card-glow">
+                    <span class="text-3xl block mb-4">✈️</span>
+                    <h4 class="text-base font-bold text-slate-200">Air Force Academy</h4>
+                    <p class="text-xs text-slate-400 mt-2">Dundigal Air Force Academy training center is located just 5 minutes away.</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl luxury-card-glow">
+                    <span class="text-3xl block mb-4">🛣️</span>
+                    <h4 class="text-base font-bold text-slate-200">Outer Ring Road (ORR)</h4>
+                    <p class="text-xs text-slate-400 mt-2">Exit 5 (Mallampet/Dundigal) is reachable within 8 minutes for high-speed city transit.</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl luxury-card-glow">
+                    <span class="text-3xl block mb-4">🚇</span>
+                    <h4 class="text-base font-bold text-slate-200">Miyapur Metro</h4>
+                    <p class="text-xs text-slate-400 mt-2">Connects to Miyapur Metro Station in just 18 minutes for easy rail transit.</p>
+                </div>
+                <div class="p-6 bg-slate-900/50 border border-slate-800 rounded-xl luxury-card-glow">
+                    <span class="text-3xl block mb-4">💼</span>
+                    <h4 class="text-base font-bold text-slate-200">IT Corridor & Hubs</h4>
+                    <p class="text-xs text-slate-400 mt-2">Reach Gachibowli, Hitec City, and key financial districts in under 25 minutes.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Choose Your Investment Plan -->
     <section id="plans" class="py-20 reveal-section">
         <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -217,7 +256,7 @@
                 <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between luxury-card-glow">
                     <div class="space-y-4">
                         <div class="h-40 rounded-lg overflow-hidden bg-slate-950 mb-3 border border-slate-800/50">
-                            <img src="Assets/WhatsApp%20Image%202026-05-25%20at%2011.07.13.jpeg" alt="Fractional Investment Plan" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
+                            <img src="Assets/images/plans/fractional-plan.jpeg" alt="Fractional Investment Plan" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
                         </div>
                         <span class="text-[10px] text-gold-500 font-bold uppercase tracking-wider block">Fractional Tier</span>
                         <h3 class="text-xl font-serif font-bold text-slate-100">Fractional Share</h3>
@@ -239,7 +278,7 @@
                 <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between luxury-card-glow">
                     <div class="space-y-4">
                         <div class="h-40 rounded-lg overflow-hidden bg-slate-950 mb-3 border border-slate-800/50">
-                            <img src="Assets/WhatsApp%20Image%202026-05-25%20at%2011.07.14%20%281%29.jpeg" alt="Standard Hotel Unit Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
+                            <img src="Assets/images/plans/standard-plan.jpeg" alt="Standard Hotel Unit Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
                         </div>
                         <span class="text-[10px] text-gold-500 font-bold uppercase tracking-wider block">Standard Unit</span>
                         <h3 class="text-xl font-serif font-bold text-slate-100">Standard Unit</h3>
@@ -262,7 +301,7 @@
                 <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between luxury-card-glow">
                     <div class="space-y-4">
                         <div class="h-40 rounded-lg overflow-hidden bg-slate-950 mb-3 border border-slate-800/50">
-                            <img src="Assets/WhatsApp%20Image%202026-05-25%20at%2011.07.14.jpeg" alt="Prime Hotel Unit Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
+                            <img src="Assets/images/plans/prime-plan.jpeg" alt="Prime Hotel Unit Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
                         </div>
                         <span class="text-[10px] text-gold-500 font-bold uppercase tracking-wider block">Prime Tier</span>
                         <h3 class="text-xl font-serif font-bold text-slate-100">Prime Unit</h3>
@@ -285,7 +324,7 @@
                 <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between luxury-card-glow">
                     <div class="space-y-4">
                         <div class="h-40 rounded-lg overflow-hidden bg-slate-950 mb-3 border border-slate-800/50">
-                            <img src="Assets/ChatGPT%20Image%20May%2019%2C%202026%2C%2010_30_47%20AM.png" alt="Luxury Suite Room Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" onerror="this.src='Assets/WhatsApp%20Image%202026-04-21%20at%2015.22.45.jpeg'; this.onerror=null;"/>
+                            <img src="Assets/images/plans/luxury-suite-plan.png" alt="Luxury Suite Room Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" onerror="this.src='Assets/images/interiors/luxury-suite-1.jpeg'; this.onerror=null;"/>
                         </div>
                         <span class="text-[10px] text-gold-500 font-bold uppercase tracking-wider block">Elite Suite</span>
                         <h3 class="text-xl font-serif font-bold text-slate-100">Luxury Suite (750 sq. ft.)</h3>
@@ -340,7 +379,7 @@
                 <!-- Visual Chart -->
                 <div class="lg:col-span-6">
                     <div class="p-4 rounded-xl border border-slate-800 bg-slate-950 shadow-xl">
-                        <img src="Assets/ChatGPT%20Image%20May%202%2C%202026%2C%2005_56_56%20PM.png" alt="Hospitality Investment vs Fixed Deposit Chart" class="w-full h-auto object-contain rounded-lg" onerror="this.style.border='1px dashed #334155'"/>
+                        <img src="Assets/images/charts/yield-chart.png" alt="Hospitality Investment vs Fixed Deposit Chart" class="w-full h-auto object-contain rounded-lg" onerror="this.style.border='1px dashed #334155'"/>
                         <span class="text-[10px] text-slate-500 block text-center mt-2 italic">Yield trajectory projections mapped across a 15-year holding horizon</span>
                     </div>
                 </div>
@@ -361,11 +400,11 @@
                 </p>
             </div>
 
-            <!-- Optimized Two-Column Image Gallery Grid -->
-            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
-                <!-- Master Suite View -->
-                <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 relative group h-80 md:h-[450px]">
-                    <img src="Assets/WhatsApp%20Image%202026-04-21%20at%2015.22.45.jpeg" alt="Luxury Master Suite Interior Layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+            <!-- Image Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Main Visual -->
+                <div class="md:col-span-2 rounded-xl overflow-hidden border border-slate-800 bg-slate-900 relative group h-80 md:h-[450px]">
+                    <img src="Assets/images/interiors/luxury-suite-1.jpeg" alt="Luxury Master Suite Interior Layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
                     <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/90 via-luxury-950/30 to-transparent"></div>
                     <div class="absolute bottom-6 left-6">
                         <span class="text-xs font-bold text-gold-400 uppercase tracking-widest block">Main Suite View</span>
@@ -373,13 +412,22 @@
                     </div>
                 </div>
 
-                <!-- TV Area View -->
-                <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 relative group h-80 md:h-[450px]">
-                    <img src="Assets/WhatsApp%20Image%202026-04-21%20at%2015.22.46.jpeg" alt="Workstation and TV Entertainment Area" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
-                    <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/90 via-luxury-950/30 to-transparent"></div>
-                    <div class="absolute bottom-6 left-6">
-                        <span class="text-xs font-bold text-gold-400 uppercase tracking-widest block">Detail Suite View</span>
-                        <h4 class="text-lg font-serif font-bold text-slate-100">Workstation / TV Area</h4>
+                <!-- Two Detail Columns -->
+                <div class="grid grid-cols-1 gap-6 md:h-[450px]">
+                    <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 relative group">
+                        <img src="Assets/images/interiors/workstation-tv-area.jpeg" alt="Workstation and TV Entertainment Area" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h5 class="text-sm font-bold text-slate-100">Workstation / TV Area</h5>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 relative group">
+                        <!-- Reusing the available detail visual to match user asset checklist -->
+                        <img src="Assets/images/interiors/signature-mural-room.jpeg" alt="Signature Mural Custom Room Styling" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h5 class="text-sm font-bold text-slate-100">Signature Mural Room</h5>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -419,7 +467,7 @@
                 <!-- Main Image Asset -->
                 <div class="lg:col-span-5">
                     <div class="rounded-2xl overflow-hidden border border-slate-800 shadow-xl bg-slate-950">
-                        <img src="Assets/WhatsApp%20Image%202026-05-25%20at%2011.07.12%20%282%29.jpeg" alt="Exclusive Owner Privileges Overview" class="w-full h-auto object-cover"/>
+                        <img src="Assets/images/perks/owner-privileges.jpeg" alt="Exclusive Owner Privileges Overview" class="w-full h-auto object-cover"/>
                     </div>
                 </div>
 
@@ -478,16 +526,85 @@
 
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
                 <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-64 md:h-80">
-                    <img src="Assets/WhatsApp%20Image%202026-04-21%20at%2014.39.27.jpeg" alt="Onsite Construction Progress View 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
+                    <img src="Assets/images/construction/site-progress-1.jpeg" alt="Onsite Construction Progress View 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
                 </div>
                 <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-64 md:h-80">
-                    <img src="Assets/WhatsApp%20Image%202026-04-21%20at%2014.39.28.jpeg" alt="Onsite Construction Progress View 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
+                    <img src="Assets/images/construction/site-progress-2.jpeg" alt="Onsite Construction Progress View 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
                 </div>
                 <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-64 md:h-80">
-                    <img src="Assets/WhatsApp%20Image%202026-04-21%20at%2014.39.25.jpeg" alt="Onsite Construction Progress View 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
+                    <img src="Assets/images/construction/site-progress-3.jpeg" alt="Onsite Construction Progress View 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
                 </div>
             </div>
             <p class="text-center text-xs text-slate-500 italic mt-6">Current physical status displays 60% construction milestone completed.</p>
+        </div>
+    </section>
+
+    <!-- Frequently Asked Questions -->
+    <section id="faq" class="py-20 bg-slate-950 border-t border-slate-800/50 reveal-section">
+        <div class="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center space-y-4 mb-16">
+                <span class="text-xs font-semibold text-gold-400 uppercase tracking-widest">FAQ</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                    Frequently Asked Questions
+                </h2>
+                <p class="text-sm text-slate-400">
+                    Find quick answers to common legal and investment queries.
+                </p>
+            </div>
+
+            <div class="space-y-4">
+                <!-- FAQ 1 -->
+                <div class="border border-slate-800 rounded-xl bg-slate-900/30 overflow-hidden">
+                    <button onclick="toggleFaq(1)" class="w-full py-5 px-6 flex justify-between items-center text-left text-sm font-bold text-slate-200 hover:text-slate-100 focus:outline-none transition-colors">
+                        <span>Is the project RERA and HMDA approved?</span>
+                        <span id="faq-icon-1" class="text-gold-500 font-serif text-lg transition-transform duration-200">+</span>
+                    </button>
+                    <div id="faq-content-1" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 pt-0 text-xs text-slate-400 leading-relaxed border-t border-slate-800/40">
+                            Yes, the project is completely legal and approved. The RERA Registration Number is **P02200005287**. It is also approved by the HMDA (Hyderabad Metropolitan Development Authority), guaranteeing clear titles and legally sound permissions.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 2 -->
+                <div class="border border-slate-800 rounded-xl bg-slate-900/30 overflow-hidden">
+                    <button onclick="toggleFaq(2)" class="w-full py-5 px-6 flex justify-between items-center text-left text-sm font-bold text-slate-200 hover:text-slate-100 focus:outline-none transition-colors">
+                        <span>How is the physical property ownership registered?</span>
+                        <span id="faq-icon-2" class="text-gold-500 font-serif text-lg transition-transform duration-200">+</span>
+                    </button>
+                    <div id="faq-content-2" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 pt-0 text-xs text-slate-400 leading-relaxed border-t border-slate-800/40">
+                            Ownership is registered directly in the buyer's name. For full units, you receive direct sale deed registration for the specific room. For fractional investments, a co-ownership deed is registered, ensuring full legal backing and tangible asset security.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 3 -->
+                <div class="border border-slate-800 rounded-xl bg-slate-900/30 overflow-hidden">
+                    <button onclick="toggleFaq(3)" class="w-full py-5 px-6 flex justify-between items-center text-left text-sm font-bold text-slate-200 hover:text-slate-100 focus:outline-none transition-colors">
+                        <span>When do the monthly rental payouts start?</span>
+                        <span id="faq-icon-3" class="text-gold-500 font-serif text-lg transition-transform duration-200">+</span>
+                    </button>
+                    <div id="faq-content-3" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 pt-0 text-xs text-slate-400 leading-relaxed border-t border-slate-800/40">
+                            Assured monthly returns start immediately post reservation deposit clearing (pro-rata based on your select investment plan). Payouts are directly credited via ECS bank transfers on or before the 10th of every calendar month.
+                        </div>
+                    </div>
+                </div>
+
+                <!-- FAQ 4 -->
+                <div class="border border-slate-800 rounded-xl bg-slate-900/30 overflow-hidden">
+                    <button onclick="toggleFaq(4)" class="w-full py-5 px-6 flex justify-between items-center text-left text-sm font-bold text-slate-200 hover:text-slate-100 focus:outline-none transition-colors">
+                        <span>Who operates the hotel, and how are revenues shared?</span>
+                        <span id="faq-icon-4" class="text-gold-500 font-serif text-lg transition-transform duration-200">+</span>
+                    </button>
+                    <div id="faq-content-4" class="max-h-0 overflow-hidden transition-all duration-300 ease-in-out">
+                        <div class="p-6 pt-0 text-xs text-slate-400 leading-relaxed border-t border-slate-800/40">
+                            The hotel is managed by **Sarovar Hotels & Resorts**, one of India's leading hospitality management chains. Post the initial assured return period, revenues are shared on a 50:50 basis from the hotel's room revenue pool, maximizing your long-term yield.
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
@@ -498,7 +615,7 @@
                 <!-- Visual asset side -->
                 <div class="lg:col-span-5 space-y-6">
                     <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl">
-                        <img src="Assets/1%20%281%29.png" alt="Final Call to Action Display Asset" class="w-full h-auto object-cover" onerror="this.style.border='1px dashed #334155'"/>
+                        <img src="Assets/images/cta/cta-banner.png" alt="Final Call to Action Display Asset" class="w-full h-auto object-cover" onerror="this.style.border='1px dashed #334155'"/>
                     </div>
                 </div>
 
@@ -673,6 +790,31 @@
             setTimeout(() => {
                 closeBooking();
             }, 2500);
+        }
+
+        // FAQ Accordion Toggle
+        function toggleFaq(id) {
+            const content = document.getElementById(`faq-content-${id}`);
+            const icon = document.getElementById(`faq-icon-${id}`);
+            if (content.style.maxHeight && content.style.maxHeight !== '0px') {
+                content.style.maxHeight = '0px';
+                icon.style.transform = 'rotate(0deg)';
+                icon.innerText = '+';
+            } else {
+                // close other open ones first
+                for (let i = 1; i <= 4; i++) {
+                    const otherContent = document.getElementById(`faq-content-${i}`);
+                    const otherIcon = document.getElementById(`faq-icon-${i}`);
+                    if (otherContent) otherContent.style.maxHeight = '0px';
+                    if (otherIcon) {
+                        otherIcon.style.transform = 'rotate(0deg)';
+                        otherIcon.innerText = '+';
+                    }
+                }
+                content.style.maxHeight = content.scrollHeight + 'px';
+                icon.style.transform = 'rotate(45deg)';
+                icon.innerText = '×';
+            }
         }
     </script>
 </body>
