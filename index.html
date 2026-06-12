@@ -1,0 +1,687 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sarovar Vasu Sri Pride Hotel | Rexium Ventures Investment</title>
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        luxury: {
+                            50: '#fbfaff',
+                            100: '#f4f3fe',
+                            800: '#1e1b4b',
+                            900: '#0f172a', /* deep navy slate */
+                            950: '#020617'
+                        },
+                        gold: {
+                            400: '#fbbf24',
+                            500: '#f59e0b',
+                            600: '#d97706',
+                            700: '#b45309'
+                        }
+                    },
+                    fontFamily: {
+                        serif: ['Playfair Display', 'serif'],
+                        sans: ['Plus Jakarta Sans', 'sans-serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <style>
+        .luxury-card-glow {
+            transition: transform 0.4s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.4s cubic-bezier(0.16, 1, 0.3, 1), border-color 0.4s ease;
+        }
+        .luxury-card-glow:hover {
+            transform: translateY(-4px);
+            box-shadow: 0 12px 30px -10px rgba(217, 119, 6, 0.15);
+        }
+        
+        /* Smooth Scroll-driven Section Transitions */
+        .reveal-section {
+            opacity: 0;
+            transform: translateY(30px);
+            transition: opacity 1s cubic-bezier(0.16, 1, 0.3, 1), transform 1s cubic-bezier(0.16, 1, 0.3, 1);
+        }
+        .reveal-section.section-visible {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        /* Nav link hover indicator */
+        .nav-link {
+            position: relative;
+        }
+        .nav-link::after {
+            content: '';
+            position: absolute;
+            width: 100%;
+            transform: scaleX(0);
+            height: 2px;
+            bottom: -4px;
+            left: 0;
+            background-color: #fbbf24;
+            transform-origin: bottom right;
+            transition: transform 0.25s ease-out;
+        }
+        .nav-link:hover::after {
+            transform: scaleX(1);
+            transform-origin: bottom left;
+        }
+    </style>
+</head>
+<body class="bg-luxury-950 text-slate-100 font-sans antialiased overflow-x-hidden">
+
+    <!-- Premium Top Alert Bar -->
+    <div class="bg-gradient-to-r from-gold-700 to-amber-900 text-white text-xs md:text-sm font-semibold py-2.5 px-4 text-center tracking-wide">
+        ⚡ RERA Approved Project (Reg No: P02200005287) • HMDA Approved Legal Security
+    </div>
+
+    <!-- Navigation & Header -->
+    <header class="sticky top-0 z-40 bg-luxury-950/90 backdrop-blur-md border-b border-slate-800/80 transition-all duration-300">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 h-20 flex items-center justify-between">
+            <div class="flex items-center gap-3">
+                <img src="Assets/RV logo.png" alt="Rexium Ventures" class="h-12 w-auto object-contain" onerror="this.style.display='none'"/>
+                <div class="flex flex-col">
+                    <span class="text-[10px] uppercase tracking-widest text-gold-500 font-bold">Rexium Ventures</span>
+                    <span class="text-base font-serif font-semibold text-slate-100 tracking-tight">Sarovar Vasu Sri Pride</span>
+                </div>
+            </div>
+            <nav class="hidden md:flex space-x-8 text-xs font-semibold text-slate-300 uppercase tracking-wider">
+                <a href="#overview" class="nav-link hover:text-gold-400 transition-colors">Overview</a>
+                <a href="#plans" class="nav-link hover:text-gold-400 transition-colors">Plans</a>
+                <a href="#growth" class="nav-link hover:text-gold-400 transition-colors">Yield Growth</a>
+                <a href="#luxury" class="nav-link hover:text-gold-400 transition-colors">Interiors</a>
+                <a href="#perks" class="nav-link hover:text-gold-400 transition-colors">Perks</a>
+                <a href="#progress" class="nav-link hover:text-gold-400 transition-colors">Progress</a>
+            </nav>
+            <div class="flex items-center gap-4">
+                <a href="tel:+918639674262" class="hidden lg:inline-flex text-xs font-semibold text-gold-400 hover:text-gold-300 transition-colors">
+                    Call: +91 8639674262
+                </a>
+                <a href="#contact" class="inline-flex items-center justify-center px-4 py-2 text-xs font-bold text-luxury-950 bg-gold-500 hover:bg-gold-400 rounded transition-all duration-300 active:scale-95">
+                    Invest Now
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="relative min-h-[80vh] flex items-center py-20 overflow-hidden border-b border-slate-800/50 reveal-section">
+        <!-- Background Image overlay -->
+        <div class="absolute inset-0 z-0">
+            <img src="Assets/openart-gpt-image-2-edit-1_1779182644290_ab943ce6.jpg" alt="Sarovar Vasu Sri Pride Hotel Banner" class="w-full h-full object-cover opacity-20" onerror="this.src='Assets/ChatGPT Image May 1, 2026, 06_44_52 PM.png'; this.onerror=null;"/>
+            <div class="absolute inset-0 bg-gradient-to-t from-luxury-950 via-luxury-950/80 to-transparent"></div>
+        </div>
+        
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10 w-full">
+            <div class="max-w-4xl space-y-6">
+                <span class="inline-flex items-center gap-2 px-3 py-1 text-xs font-semibold text-gold-400 bg-gold-500/10 border border-gold-500/20 rounded-full tracking-wide">
+                    <span class="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse"></span>
+                    Direct Asset Registration
+                </span>
+                <p class="text-xs font-bold text-gold-500 uppercase tracking-widest font-sans">Own a Luxury Hotel Unit. Earn for Life.</p>
+                <h1 class="text-4xl sm:text-5xl lg:text-6xl font-serif font-semibold text-slate-100 leading-tight">
+                    Unparalleled Investment Opportunity in Sarovar Vasu Sri Pride Hotel, Hyderabad.
+                </h1>
+                <p class="text-lg text-slate-400 leading-relaxed max-w-2xl">
+                    A 1000 CR RERA-approved project located near the prestigious Dundigal Training Academy. Secure stable rental cashflow and significant asset appreciation backed by direct physical property registration.
+                </p>
+                
+                <div class="flex flex-col sm:flex-row gap-4 pt-4">
+                    <a href="#plans" class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-luxury-950 bg-gold-500 hover:bg-gold-400 rounded-lg shadow-lg hover:shadow-gold-500/20 transition-all duration-300 active:scale-95">
+                        Choose Investment Plan
+                    </a>
+                    <a href="#contact" class="inline-flex items-center justify-center px-8 py-4 text-sm font-bold text-slate-200 hover:text-slate-100 bg-slate-900 border border-slate-800 hover:border-slate-700 rounded-lg transition-all duration-300 active:scale-95">
+                        Request Site Visit
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Overview & Legitimacy -->
+    <section id="overview" class="py-20 bg-slate-900/30 border-b border-slate-800/50 reveal-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Side Visual -->
+                <div class="lg:col-span-5">
+                    <div class="relative rounded-2xl overflow-hidden border border-slate-800 shadow-2xl bg-slate-950 group">
+                        <img src="Assets/FRONT Side SCPL DUNDIGUL.jpg.jpeg" alt="SCPL Dundigul Front Elevation" class="w-full h-auto object-cover transition-transform duration-700 group-hover:scale-105" />
+                        <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/80 to-transparent"></div>
+                    </div>
+                </div>
+
+                <!-- Key Details -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block">Structural Security</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                        Reliable Compliance & Market Dynamics
+                    </h2>
+                    
+                    <div class="grid grid-cols-1 sm:grid-cols-2 gap-6 pt-4">
+                        <div class="space-y-2">
+                            <h4 class="text-sm font-bold text-slate-200 flex items-center gap-2">
+                                <span class="text-gold-500">✔</span> 60% Construction Progress
+                            </h4>
+                            <p class="text-xs text-slate-400">Construction is fully underway with scheduled hotel operations beginning March 2027.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="text-sm font-bold text-slate-200 flex items-center gap-2">
+                                <span class="text-gold-500">✔</span> High Occupancy Location
+                            </h4>
+                            <p class="text-xs text-slate-400">Strategically surrounded by over 20,000 apartments and premium villas to capture consistent year-round guest traffic.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="text-sm font-bold text-slate-200 flex items-center gap-2">
+                                <span class="text-gold-500">✔</span> Legal Protection
+                            </h4>
+                            <p class="text-xs text-slate-400">Fully RERA & HMDA compliant, offering transparent validation across all investment levels.</p>
+                        </div>
+                        <div class="space-y-2">
+                            <h4 class="text-sm font-bold text-slate-200 flex items-center gap-2">
+                                <span class="text-gold-500">✔</span> Registered Asset Value
+                            </h4>
+                            <p class="text-xs text-slate-400">Your specific purchase share is fully registered directly under your name for 100% security.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Choose Your Investment Plan -->
+    <section id="plans" class="py-20 reveal-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs font-semibold text-gold-400 uppercase tracking-widest">Pricing & Tiers</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                    Find the Allocation Tier Perfect for Your Portfolio
+                </h2>
+                <p class="text-sm text-slate-400">
+                    Explore our selection of commercial hospitality plans constructed to yield assured rental returns.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- Fractional -->
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between luxury-card-glow">
+                    <div class="space-y-4">
+                        <div class="h-40 rounded-lg overflow-hidden bg-slate-950 mb-3 border border-slate-800/50">
+                            <img src="Assets/WhatsApp Image 2026-05-25 at 11.07.13.jpeg" alt="Fractional Investment Plan" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
+                        </div>
+                        <span class="text-[10px] text-gold-500 font-bold uppercase tracking-wider block">Fractional Tier</span>
+                        <h3 class="text-xl font-serif font-bold text-slate-100">Fractional Share</h3>
+                        <div class="border-t border-slate-800 pt-3">
+                            <span class="text-xs text-slate-400 block">ENTRY TIER</span>
+                            <span class="text-2xl font-bold text-slate-100">₹10 Lakhs</span>
+                        </div>
+                        <div class="border-t border-slate-800 pt-3">
+                            <span class="text-xs text-slate-400 block">ASSURED MONTHLY RETURN</span>
+                            <span class="text-base font-semibold text-emerald-400">₹9,000/month for 36 mos</span>
+                        </div>
+                    </div>
+                    <button onclick="openBooking('Fractional Plan')" class="mt-6 w-full py-2.5 text-xs font-semibold text-center text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-slate-600 rounded transition-all duration-300">
+                        Select Plan
+                    </button>
+                </div>
+
+                <!-- Standard -->
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between luxury-card-glow">
+                    <div class="space-y-4">
+                        <div class="h-40 rounded-lg overflow-hidden bg-slate-950 mb-3 border border-slate-800/50">
+                            <img src="Assets/WhatsApp Image 2026-05-25 at 11.07.14 (1).jpeg" alt="Standard Hotel Unit Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
+                        </div>
+                        <span class="text-[10px] text-gold-500 font-bold uppercase tracking-wider block">Standard Unit</span>
+                        <h3 class="text-xl font-serif font-bold text-slate-100">Standard Unit</h3>
+                        <div class="border-t border-slate-800 pt-3">
+                            <span class="text-xs text-slate-400 block">ENTRY TIER</span>
+                            <span class="text-2xl font-bold text-slate-100">₹15 Lakhs</span>
+                        </div>
+                        <div class="border-t border-slate-800 pt-3">
+                            <span class="text-xs text-slate-400 block">ASSURED MONTHLY RETURN</span>
+                            <span class="text-base font-semibold text-emerald-400">₹22,500/month</span>
+                            <span class="text-[10px] text-slate-400 block mt-0.5">Projected path to ₹1.11 Cr in 15 yrs</span>
+                        </div>
+                    </div>
+                    <button onclick="openBooking('Standard Unit Plan')" class="mt-6 w-full py-2.5 text-xs font-semibold text-center text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-slate-600 rounded transition-all duration-300">
+                        Select Plan
+                    </button>
+                </div>
+
+                <!-- Prime -->
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between luxury-card-glow">
+                    <div class="space-y-4">
+                        <div class="h-40 rounded-lg overflow-hidden bg-slate-950 mb-3 border border-slate-800/50">
+                            <img src="Assets/WhatsApp Image 2026-05-25 at 11.07.13 (1).jpeg" alt="Prime Hotel Unit Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110"/>
+                        </div>
+                        <span class="text-[10px] text-gold-500 font-bold uppercase tracking-wider block">Prime Tier</span>
+                        <h3 class="text-xl font-serif font-bold text-slate-100">Prime Unit</h3>
+                        <div class="border-t border-slate-800 pt-3">
+                            <span class="text-xs text-slate-400 block">ENTRY TIER</span>
+                            <span class="text-2xl font-bold text-slate-100">₹25 Lakhs</span>
+                        </div>
+                        <div class="border-t border-slate-800 pt-3">
+                            <span class="text-xs text-slate-400 block">ASSURED MONTHLY RETURN</span>
+                            <span class="text-base font-semibold text-emerald-400">₹18,750/month for 3 yrs</span>
+                            <span class="text-[10px] text-slate-400 block mt-0.5">Then scales up to ₹1L/month</span>
+                        </div>
+                    </div>
+                    <button onclick="openBooking('Prime Unit Plan')" class="mt-6 w-full py-2.5 text-xs font-semibold text-center text-luxury-950 bg-gold-500 hover:bg-gold-400 rounded transition-all duration-300">
+                        Select Plan
+                    </button>
+                </div>
+
+                <!-- Luxury Suite -->
+                <div class="p-6 rounded-xl bg-slate-900 border border-slate-800 flex flex-col justify-between luxury-card-glow">
+                    <div class="space-y-4">
+                        <div class="h-40 rounded-lg overflow-hidden bg-slate-950 mb-3 border border-slate-800/50">
+                            <img src="Assets/ChatGPT Image May 19, 2026, 10_30_47 AM.png" alt="Luxury Suite Room Investment" class="w-full h-full object-cover transition-transform duration-500 hover:scale-110" onerror="this.src='Assets/WhatsApp Image 2026-04-21 at 15.22.45.jpeg'; this.onerror=null;"/>
+                        </div>
+                        <span class="text-[10px] text-gold-500 font-bold uppercase tracking-wider block">Elite Suite</span>
+                        <h3 class="text-xl font-serif font-bold text-slate-100">Luxury Suite (750 sq. ft.)</h3>
+                        <div class="border-t border-slate-800 pt-3">
+                            <span class="text-xs text-slate-400 block">ENTRY TIER</span>
+                            <span class="text-2xl font-bold text-slate-100">₹1.25 Crore</span>
+                        </div>
+                        <div class="border-t border-slate-800 pt-3">
+                            <span class="text-xs text-slate-400 block">ASSURED MONTHLY RETURN</span>
+                            <span class="text-base font-semibold text-emerald-400">₹1.25 Lakhs/month</span>
+                            <span class="text-[10px] text-slate-400 block mt-0.5">Assured window for 24-36 mos</span>
+                        </div>
+                    </div>
+                    <button onclick="openBooking('Luxury Suite Plan')" class="mt-6 w-full py-2.5 text-xs font-semibold text-center text-slate-200 bg-slate-800 hover:bg-slate-700 border border-slate-700 hover:border-slate-600 rounded transition-all duration-300">
+                        Select Plan
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Financial Growth: Why This Beats a Bank FD -->
+    <section id="growth" class="py-20 bg-slate-900/30 border-y border-slate-800/80 reveal-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Content Area -->
+                <div class="lg:col-span-6 space-y-6">
+                    <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block">Comparative Performance</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                        Maximize Return Horizons: Real Estate Yield vs. Standard FD Returns
+                    </h2>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Historically, traditional banking channels limit your asset trajectory. Investing in premium commercial hospitality property leverages rental demand structures alongside steady capital appreciation.
+                    </p>
+                    <div class="p-6 bg-slate-950 rounded-xl border border-slate-800/85 space-y-4">
+                        <h4 class="text-xs uppercase text-gold-400 font-bold tracking-wider">Example Performance Analysis (₹25-Lakh Investment)</h4>
+                        <div class="grid grid-cols-2 gap-4">
+                            <div class="p-3 bg-slate-900 rounded border border-slate-800">
+                                <span class="text-[10px] text-slate-400 block">SAROVAR VASU SRI PRIDE</span>
+                                <span class="text-xl font-bold text-emerald-400">₹1.45 - 1.6 Cr</span>
+                                <span class="text-[9px] text-slate-400 block mt-1">Total value potential over 15 yrs</span>
+                            </div>
+                            <div class="p-3 bg-slate-900 rounded border border-slate-800">
+                                <span class="text-[10px] text-slate-400 block">STANDARD BANK FD</span>
+                                <span class="text-xl font-bold text-slate-400">₹55 - 60 Lakhs</span>
+                                <span class="text-[9px] text-slate-400 block mt-1">Limited interest growth returns</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Visual Chart -->
+                <div class="lg:col-span-6">
+                    <div class="p-4 rounded-xl border border-slate-800 bg-slate-950 shadow-xl">
+                        <img src="Assets/ChatGPT Image May 2, 2026, 05_56_56 PM.png" alt="Hospitality Investment vs Fixed Deposit Chart" class="w-full h-auto object-contain rounded-lg" onerror="this.style.border='1px dashed #334155'"/>
+                        <span class="text-[10px] text-slate-500 block text-center mt-2 italic">Yield trajectory projections mapped across a 15-year holding horizon</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- The Luxury Experience (Interior Gallery) -->
+    <section id="luxury" class="py-20 reveal-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs font-semibold text-gold-400 uppercase tracking-widest">Experiential Stays</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                    A Glimpse into Elite Master Suites
+                </h2>
+                <p class="text-sm text-slate-400">
+                    Meticulously structured aesthetics that command premium nightly room rates.
+                </p>
+            </div>
+
+            <!-- Image Gallery Grid -->
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <!-- Main Visual -->
+                <div class="md:col-span-2 rounded-xl overflow-hidden border border-slate-800 bg-slate-900 relative group h-80 md:h-[450px]">
+                    <img src="Assets/WhatsApp Image 2026-04-21 at 15.22.45.jpeg" alt="Luxury Master Suite Interior Layout" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                    <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/90 via-luxury-950/30 to-transparent"></div>
+                    <div class="absolute bottom-6 left-6">
+                        <span class="text-xs font-bold text-gold-400 uppercase tracking-widest block">Main Suite View</span>
+                        <h4 class="text-lg font-serif font-bold text-slate-100">Luxury Master Suite</h4>
+                    </div>
+                </div>
+
+                <!-- Two Detail Columns -->
+                <div class="grid grid-cols-1 gap-6 md:h-[450px]">
+                    <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 relative group">
+                        <img src="Assets/WhatsApp Image 2026-04-21 at 15.22.46 (1).jpeg" alt="Ganesha Mural Custom Room Styling" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h5 class="text-sm font-bold text-slate-100">Ganesha Mural Room</h5>
+                        </div>
+                    </div>
+                    <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 relative group">
+                        <img src="Assets/WhatsApp Image 2026-04-21 at 15.22.46.jpeg" alt="Workstation and TV Entertainment Area" class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"/>
+                        <div class="absolute inset-0 bg-gradient-to-t from-luxury-950/80 to-transparent"></div>
+                        <div class="absolute bottom-4 left-4">
+                            <h5 class="text-sm font-bold text-slate-100">Workstation / TV Area</h5>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Integrated Amenities list -->
+            <div class="mt-12 p-6 rounded-xl bg-slate-900/50 border border-slate-800/80">
+                <div class="grid grid-cols-2 md:grid-cols-5 gap-6 text-center">
+                    <div class="p-3">
+                        <span class="text-gold-400 text-lg block mb-1">🌊</span>
+                        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">Infinity Pool</span>
+                    </div>
+                    <div class="p-3">
+                        <span class="text-gold-400 text-lg block mb-1">🧘‍♀️</span>
+                        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">Rejuvenating Spa</span>
+                    </div>
+                    <div class="p-3">
+                        <span class="text-gold-400 text-lg block mb-1">🏋️‍♀️</span>
+                        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">Fitness Center</span>
+                    </div>
+                    <div class="p-3">
+                        <span class="text-gold-400 text-lg block mb-1">🍽️</span>
+                        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">Gourmet Dining</span>
+                    </div>
+                    <div class="p-3 col-span-2 md:col-span-1">
+                        <span class="text-gold-400 text-lg block mb-1">🛎️</span>
+                        <span class="text-xs font-bold text-slate-300 uppercase tracking-wider block">24/7 Concierge</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Exclusive Owner Perks & Lucky Dip -->
+    <section id="perks" class="py-20 bg-slate-900/30 border-y border-slate-800/80 reveal-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Main Image Asset -->
+                <div class="lg:col-span-5">
+                    <div class="rounded-2xl overflow-hidden border border-slate-800 shadow-xl bg-slate-950">
+                        <img src="Assets/WhatsApp Image 2026-05-25 at 11.07.12 (2).jpeg" alt="Exclusive Owner Privileges Overview" class="w-full h-auto object-cover"/>
+                    </div>
+                </div>
+
+                <!-- Stay, Wedding & Lucky Dip Perks Copy -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block font-sans">Owner Privileges</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                        Value-Added Programs & Lucky Dip Incentives
+                    </h2>
+                    
+                    <div class="space-y-4">
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80 flex gap-4">
+                            <span class="text-2xl text-gold-400 shrink-0">🏨</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">15-Night Annual Luxury Stays</h4>
+                                <p class="text-xs text-slate-400 mt-1">Enjoy 15 Nights / 16 Days of complimentary stays every calendar year for a full 15-year period.</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80 flex gap-4 relative overflow-hidden">
+                            <div class="absolute top-2 right-2 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[9px] font-bold px-1.5 py-0.5 rounded">
+                                Up to ₹75L Returns
+                            </div>
+                            <span class="text-2xl text-gold-400 shrink-0">💍</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Free Wedding Banquet + Accommodation Package</h4>
+                                <p class="text-xs text-slate-400 mt-1">Includes a Banquet Hall + 25 Rooms package usable up to 5 times. Unused packages can be sold for up to ₹15 Lakhs each (potential ₹75 Lakhs total return).</p>
+                            </div>
+                        </div>
+
+                        <div class="p-4 rounded-xl bg-slate-950 border border-slate-800/80 flex gap-4">
+                            <span class="text-2xl text-gold-400 shrink-0">🎁</span>
+                            <div>
+                                <h4 class="text-sm font-bold text-slate-200">Exclusive Lucky Dip Rewards</h4>
+                                <p class="text-xs text-slate-400 mt-1">Confirmed unit bookings automatically enter draws to win: Renault Kwid car, a trip for two to Bangkok, iPhone 16, or 10gm Gold Coins.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Current Progress (Proof of Work) -->
+    <section id="progress" class="py-20 reveal-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="text-center max-w-3xl mx-auto space-y-4 mb-16">
+                <span class="text-xs font-semibold text-gold-400 uppercase tracking-widest">Structural Timelines</span>
+                <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                    Construction Activity & Site Proof of Work
+                </h2>
+                <p class="text-sm text-slate-400">
+                    Live updates of the physical structures at Sarovar Vasu Sri Pride, confirming consistent development momentum.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+                <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-64 md:h-80">
+                    <img src="Assets/WhatsApp Image 2026-04-21 at 14.39.27.jpeg" alt="Onsite Construction Progress View 1" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
+                </div>
+                <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-64 md:h-80">
+                    <img src="Assets/WhatsApp Image 2026-04-21 at 14.39.28.jpeg" alt="Onsite Construction Progress View 2" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
+                </div>
+                <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-900 h-64 md:h-80">
+                    <img src="Assets/WhatsApp Image 2026-04-21 at 14.39.25.jpeg" alt="Onsite Construction Progress View 3" class="w-full h-full object-cover hover:scale-105 transition-transform duration-500"/>
+                </div>
+            </div>
+            <p class="text-center text-xs text-slate-500 italic mt-6">Current physical status displays 60% construction milestone completed.</p>
+        </div>
+    </section>
+
+    <!-- Footer & Final Call to Action -->
+    <section id="contact" class="py-20 bg-gradient-to-b from-slate-900 to-luxury-950 relative border-t border-slate-800/80 reveal-section">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative z-10">
+            <div class="grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+                <!-- Visual asset side -->
+                <div class="lg:col-span-5 space-y-6">
+                    <div class="rounded-xl overflow-hidden border border-slate-800 bg-slate-950 shadow-2xl">
+                        <img src="Assets/1 (1).png" alt="Final Call to Action Display Asset" class="w-full h-auto object-cover" onerror="this.style.border='1px dashed #334155'"/>
+                    </div>
+                </div>
+
+                <!-- Closing Action Details -->
+                <div class="lg:col-span-7 space-y-6">
+                    <span class="text-xs font-bold text-gold-500 uppercase tracking-widest block font-sans">Final Allocations</span>
+                    <h2 class="text-3xl sm:text-4xl font-serif font-semibold text-slate-100">
+                        Limited units left! Secure your spot with a refundable booking
+                    </h2>
+                    <p class="text-sm text-slate-400 leading-relaxed">
+                        Secure your desired unit tier with a refundable reservation booking of <strong class="text-slate-200">₹1 Lakh via GPay to 9000484890</strong>. Final balance processing and legal registrations are completed within 30 days.
+                    </p>
+
+                    <!-- Core Contact Metadata Grid -->
+                    <div class="p-6 rounded-xl bg-slate-950 border border-slate-800/60 grid grid-cols-1 sm:grid-cols-3 gap-6 text-xs">
+                        <div class="space-y-1">
+                            <span class="text-[10px] text-slate-500 block">CALL CONTACT</span>
+                            <a href="tel:+918639674262" class="font-bold text-slate-200 hover:text-gold-400 transition-colors block">+91 8639674262</a>
+                            <a href="tel:+919000484890" class="font-bold text-slate-200 hover:text-gold-400 transition-colors block">+91 9000484890</a>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="text-[10px] text-slate-500 block">OFFICIAL EMAIL</span>
+                            <a href="mailto:rexiumventures@gmail.com" class="font-bold text-slate-200 hover:text-gold-400 transition-colors block">rexiumventures@gmail.com</a>
+                        </div>
+                        <div class="space-y-1">
+                            <span class="text-[10px] text-slate-500 block">PROJECT LOCATION</span>
+                            <span class="font-bold text-slate-200 block">Hyderabad, Telangana</span>
+                        </div>
+                    </div>
+
+                    <!-- Direct Fast Reservation Form -->
+                    <form onsubmit="handleInquiry(event)" class="space-y-4 pt-4">
+                        <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                            <input type="text" required class="w-full bg-slate-950 border border-slate-800 focus:border-gold-500 text-xs rounded-lg px-4 py-3 text-slate-100 outline-none transition-all" placeholder="Your Name">
+                            <input type="tel" required class="w-full bg-slate-950 border border-slate-800 focus:border-gold-500 text-xs rounded-lg px-4 py-3 text-slate-100 outline-none transition-all" placeholder="Your Phone Number">
+                        </div>
+                        <button type="submit" class="w-full py-3.5 px-4 text-xs font-bold text-luxury-950 bg-gold-500 hover:bg-gold-400 rounded shadow-lg transition-all duration-300 active:scale-95">
+                            Request Detailed Allocation Offer Booklet
+                        </button>
+                    </form>
+                    <div id="form-success-msg" class="hidden mt-4 p-3 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-xs text-center rounded">
+                        Thank you. Your request was successfully recorded. Our investment services representative will connect with you shortly.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer Content -->
+    <footer class="bg-luxury-950 border-t border-slate-900 py-12 text-slate-500 text-xs">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 space-y-6 text-center md:text-left">
+            <div class="flex flex-col md:flex-row justify-between items-center gap-6">
+                <div>
+                    <h4 class="text-sm font-serif font-semibold text-slate-200">Rexium Ventures</h4>
+                    <p class="mt-1">Authorized representative marketing partner for the Sarovar Vasu Sri Pride project.</p>
+                </div>
+                <div class="text-xs text-slate-400">
+                    RERA Registration Code: P02200005287
+                </div>
+            </div>
+            <div class="border-t border-slate-900/60 pt-6 text-[11px] leading-relaxed">
+                <p>Disclaimer: Financial trajectory statistics and projected appreciation outcomes represent calculated estimations based on current local occupancy dynamics. Allocation procedures, physical registrations, and guaranteed monthly rental periods are bound to final validated real estate contracts.</p>
+                <p class="mt-2 text-slate-600">© 2026 Rexium Ventures. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Interactive Plan Booking Modal -->
+    <div id="booking-modal" class="fixed inset-0 z-50 flex items-center justify-center p-4 bg-slate-950/80 backdrop-blur-sm hidden transition-opacity duration-300 opacity-0">
+        <div class="bg-slate-900 border border-slate-800 rounded-2xl w-full max-w-md p-6 relative shadow-2xl space-y-4 transform scale-95 transition-transform duration-300">
+            <button onclick="closeBooking()" class="absolute top-4 right-4 text-slate-400 hover:text-slate-200 text-lg transition-colors">&times;</button>
+            <div>
+                <span class="text-[10px] text-gold-500 font-bold uppercase tracking-widest block">Investment Request</span>
+                <h3 id="modal-plan-title" class="text-xl font-serif font-bold text-slate-100">Plan Option</h3>
+            </div>
+            <p class="text-xs text-slate-400 leading-relaxed">
+                Submit details below to confirm current availability metrics and receive secure property registry schedules.
+            </p>
+            <form onsubmit="handleModalSubmit(event)" class="space-y-3">
+                <input type="hidden" id="modal-hidden-plan">
+                <div>
+                    <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-wide mb-1">Full Name</label>
+                    <input type="text" required class="w-full bg-slate-950 border border-slate-800 focus:border-gold-500 text-xs rounded-lg px-3.5 py-2.5 text-slate-100 outline-none transition-all" placeholder="Enter name">
+                </div>
+                <div>
+                    <label class="block text-[10px] font-bold text-slate-400 uppercase tracking-wide mb-1">Mobile Contact</label>
+                    <input type="tel" required class="w-full bg-slate-950 border border-slate-800 focus:border-gold-500 text-xs rounded-lg px-3.5 py-2.5 text-slate-100 outline-none transition-all" placeholder="Phone number">
+                </div>
+                <button type="submit" class="w-full py-3 px-4 text-xs font-semibold text-luxury-950 bg-gold-500 hover:bg-gold-400 rounded transition-all duration-300 active:scale-95">
+                    Request Booking Call
+                </button>
+            </form>
+            <div id="modal-success-msg" class="hidden p-2.5 bg-emerald-500/10 border border-emerald-500/20 text-emerald-400 text-[11px] text-center rounded">
+                Allocation request registered. We will call you shortly.
+            </div>
+        </div>
+    </div>
+
+    <!-- Scripting for scroll reveal and forms -->
+    <script>
+        // Setup Intersection Observer for smooth reveal on scroll
+        document.addEventListener('DOMContentLoaded', () => {
+            const observerOptions = {
+                root: null,
+                rootMargin: '0px',
+                threshold: 0.08
+            };
+
+            const sectionObserver = new IntersectionObserver((entries, observer) => {
+                entries.forEach(entry => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('section-visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            }, observerOptions);
+
+            document.querySelectorAll('.reveal-section').forEach(section => {
+                sectionObserver.observe(section);
+            });
+        });
+
+        // Booking Modal controllers with transitions
+        function openBooking(planName) {
+            document.getElementById('modal-plan-title').innerText = planName;
+            document.getElementById('modal-hidden-plan').value = planName;
+            
+            const selectEl = document.getElementById('form-plan-select');
+            if (selectEl) {
+                selectEl.value = planName;
+            }
+            
+            const modal = document.getElementById('booking-modal');
+            const innerCard = modal.querySelector('.transform');
+            modal.classList.remove('hidden');
+            
+            setTimeout(() => {
+                modal.classList.remove('opacity-0');
+                innerCard.classList.remove('scale-95');
+                innerCard.classList.add('scale-100');
+            }, 10);
+        }
+
+        function closeBooking() {
+            const modal = document.getElementById('booking-modal');
+            const innerCard = modal.querySelector('.transform');
+            
+            modal.classList.add('opacity-0');
+            innerCard.classList.remove('scale-100');
+            innerCard.classList.add('scale-95');
+            
+            setTimeout(() => {
+                modal.classList.add('hidden');
+                document.getElementById('modal-success-msg').classList.add('hidden');
+            }, 300);
+        }
+
+        // Form handlers
+        function handleInquiry(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('form-success-msg');
+            successMsg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => successMsg.classList.add('hidden'), 5000);
+        }
+
+        function handleModalSubmit(e) {
+            e.preventDefault();
+            const successMsg = document.getElementById('modal-success-msg');
+            successMsg.classList.remove('hidden');
+            e.target.reset();
+            setTimeout(() => {
+                closeBooking();
+            }, 2500);
+        }
+    </script>
+</body>
+</html>
